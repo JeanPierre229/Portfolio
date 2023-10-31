@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Contacts !</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    
+</head>
+<style>
+    #st-t{
+        color: brown;
+    }
+    #envoi:hover{
+        color:aliceblue;
+        background-color: green;
+    }
+</style>
+<body class="bg-danger">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <p class="h4 text-center mt-5 text-white" >MAIL PROFESSIONNEL ET CONTACTS</p>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3 text-center mt-5">
+                <img style="width: 30%;" class="p-4 m-2 bg-light rounded-5" src="images/book.svg" alt="Rien">
+                <h4 class="text-center text-white mb-5">J'AIME LIRE</h4>
+                <p class="text-center text-white mx-4 my-5 mb-5">
+                    J'aime la littérature: les romans policières, les bandes déssinés (manga).
+                    Il faut noter aussi que j'aime les poèmes.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center mt-5">
+                <img style="width: 30%; " class="p-4 m-2 bg-light rounded-5" src="images/enveloppe.svg" alt="Rien">
+                <h4 class="text-white mb-5">EMAIL PROFESSIONNEL</h4>
+                <p class="text-center text-white mx-4 my-5 mb-5">
+                    Mon mail professionnel est disponible pour tout échange éventuel:
+                    "dodo.houndealo53@gmail.com". 
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center mt-5">
+                <img style="width: 30%; " class="p-4 m-2 bg-light rounded-5" src="images/users.svg" alt="Rien">
+                <h4 class="text-center text-white">EVENTUEL POSTE</h4>
+                <p class="text-center text-white mx-4 my-5 mb-5">
+                    Les postes à porté de main sont: Administrateur de Base
+                    de donnée, Technicien Informatique, Analyste Programmeur... <br/>
+                    Tel: +22953992605
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-3">
+        <form action="" method="POST" class="col shadow p-4 bg-light rounded-4">
+            <fieldset>
+                <legend class="text-center">Contactez-moi !</legend>
+                <div class="row-12 row-md-6 row-lg-3 py-3">
+                    <label class="form-label" for="nom"><strong>Nom :</strong></label>
+                    <input class="form-control bg-danger" type="text" id="nom" name="nom" placeholder="Entrer votre nom !" required/>
+                </div>
+                <div class="row-12 row-md-6 row-lg-3 py-3">
+                    <label class="form-label" for="mail"><strong>E-Mail :</strong></label>
+                    <input class="form-control bg-danger" type="text" id="mail" name="mail" placeholder="Entrer votre adresse mail !" required/>
+                </div>
+                <div class="row-12 row-md-6 row-lg-3 py-3">
+                    <label class="form-label" for="message"><strong>Message :</strong></label>
+                    <textarea class="form-control bg-danger" name="message" id="message" cols="10" rows="5" required></textarea>
+                </div>
+                <div class="row-12 row-md-6 row-lg-3 text-end">
+                    <input type="submit" value="Envoyer" id="envoi" class="text-center text-white bg-danger d-inline p-2 mt-2 rounded-4">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
